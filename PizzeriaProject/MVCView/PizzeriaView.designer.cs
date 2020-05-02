@@ -61,6 +61,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.txtnome = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnConfermaOrdine = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -69,6 +71,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox4
@@ -139,7 +142,7 @@
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Location = new System.Drawing.Point(22, 106);
+            this.panel1.Location = new System.Drawing.Point(22, 88);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(557, 281);
             this.panel1.TabIndex = 78;
@@ -299,7 +302,7 @@
             this.panel2.Controls.Add(this.txtnome);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Enabled = false;
-            this.panel2.Location = new System.Drawing.Point(585, 106);
+            this.panel2.Location = new System.Drawing.Point(585, 88);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(540, 281);
             this.panel2.TabIndex = 79;
@@ -421,12 +424,31 @@
             this.label5.TabIndex = 203;
             this.label5.Text = "INDIRIZZO";
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.LightCoral;
+            this.panel3.Controls.Add(this.btnConfermaOrdine);
+            this.panel3.Location = new System.Drawing.Point(23, 375);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1102, 352);
+            this.panel3.TabIndex = 249;
+            // 
+            // btnConfermaOrdine
+            // 
+            this.btnConfermaOrdine.Location = new System.Drawing.Point(812, 268);
+            this.btnConfermaOrdine.Name = "btnConfermaOrdine";
+            this.btnConfermaOrdine.Size = new System.Drawing.Size(160, 70);
+            this.btnConfermaOrdine.TabIndex = 215;
+            this.btnConfermaOrdine.Text = "CONFERMA ORDINE";
+            this.btnConfermaOrdine.UseVisualStyleBackColor = true;
+            // 
             // PizzeriaView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Firebrick;
             this.ClientSize = new System.Drawing.Size(1150, 736);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox4);
@@ -449,6 +471,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -488,6 +511,8 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtnome;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button btnConfermaOrdine;
     }
 }
 
