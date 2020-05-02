@@ -179,7 +179,7 @@ namespace WinFormMVC.View
 
         public string SurnameClient => this.txtcognome.Text;
 
-        public string CityClient => txtcitta.Text;
+        public string CityClient => this.txtcitta.Text;
 
         public string AddressClient => this.txtindirizzo.Text;
 
