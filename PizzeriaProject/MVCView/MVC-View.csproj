@@ -38,7 +38,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ControlComboBox.cs" />
+    <Compile Include="ControllComboBox.cs" />
     <Compile Include="ControllDataClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PizzeriaView.cs">

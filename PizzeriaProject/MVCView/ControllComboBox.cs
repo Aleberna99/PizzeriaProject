@@ -6,13 +6,13 @@ using System.Windows.Forms;
 
 namespace MVCView
 {
-    public class ControlComboBox
+    public class ControllComboBox
     {
         private ComboBox cmbDrink;
         private ComboBox cmbPizza;
         private string ingredients;
 
-        public ControlComboBox(ComboBox drink, ComboBox pizza)
+        public ControllComboBox(ComboBox drink, ComboBox pizza)
         {
             this.cmbDrink = drink;
             this.cmbPizza = pizza;
