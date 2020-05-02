@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Client.cs" />
     <Compile Include="Drink.cs" />
+    <Compile Include="IDatabase.cs" />
     <Compile Include="IOrder.cs" />
     <Compile Include="IOrderExtensions.cs" />
     <Compile Include="IVisitor.cs" />
