@@ -41,9 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Client.cs" />
-    <Compile Include="DBHendler.cs" />
+    <Compile Include="Database\DBHendler.cs" />
     <Compile Include="Drink.cs" />
-    <Compile Include="IDatabase.cs" />
+    <Compile Include="Database\IDatabase.cs" />
     <Compile Include="IOrder.cs" />
     <Compile Include="IOrderExtensions.cs" />
     <Compile Include="IVisitor.cs" />
