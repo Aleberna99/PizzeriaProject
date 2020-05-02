@@ -42,6 +42,7 @@
     <Compile Include="IPizzeriaView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PizzeriaController.cs" />
+    <Compile Include="TotalPrice.cs" />
     <Compile Include="TotalQuantity.cs" />
   </ItemGroup>
   <ItemGroup>
