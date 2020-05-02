@@ -47,6 +47,20 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnConfermaDatiCliente = new System.Windows.Forms.Button();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.txtcitta = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtindirizzo = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtcognome = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtnome = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -54,13 +68,14 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox4
             // 
             this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(156, 9);
+            this.pictureBox4.Location = new System.Drawing.Point(149, 12);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(58, 57);
             this.pictureBox4.TabIndex = 77;
@@ -70,7 +85,7 @@
             // 
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(93, 9);
+            this.pictureBox3.Location = new System.Drawing.Point(86, 12);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(64, 57);
             this.pictureBox3.TabIndex = 76;
@@ -81,7 +96,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Firebrick;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(1030, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(1024, 5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(101, 75);
             this.pictureBox1.TabIndex = 74;
@@ -103,7 +118,7 @@
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(29, 9);
+            this.pictureBox2.Location = new System.Drawing.Point(22, 12);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(64, 57);
             this.pictureBox2.TabIndex = 75;
@@ -124,7 +139,7 @@
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Location = new System.Drawing.Point(29, 106);
+            this.panel1.Location = new System.Drawing.Point(22, 106);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(557, 281);
             this.panel1.TabIndex = 78;
@@ -267,12 +282,152 @@
             this.label4.TabIndex = 214;
             this.label4.Text = "COMPONI MENU";
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.LightCoral;
+            this.panel2.Controls.Add(this.btnConfermaDatiCliente);
+            this.panel2.Controls.Add(this.txtTelefono);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.label19);
+            this.panel2.Controls.Add(this.txtcitta);
+            this.panel2.Controls.Add(this.label17);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.txtindirizzo);
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.txtcognome);
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.txtnome);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Enabled = false;
+            this.panel2.Location = new System.Drawing.Point(585, 106);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(540, 281);
+            this.panel2.TabIndex = 79;
+            // 
+            // btnConfermaDatiCliente
+            // 
+            this.btnConfermaDatiCliente.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnConfermaDatiCliente.Location = new System.Drawing.Point(364, 140);
+            this.btnConfermaDatiCliente.Name = "btnConfermaDatiCliente";
+            this.btnConfermaDatiCliente.Size = new System.Drawing.Size(135, 60);
+            this.btnConfermaDatiCliente.TabIndex = 248;
+            this.btnConfermaDatiCliente.Text = "CONFERMA DATI CLIENTE";
+            this.btnConfermaDatiCliente.UseVisualStyleBackColor = true;
+            // 
+            // txtTelefono
+            // 
+            this.txtTelefono.Location = new System.Drawing.Point(138, 225);
+            this.txtTelefono.MaxLength = 10;
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(131, 22);
+            this.txtTelefono.TabIndex = 215;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Uighur", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(146, 15);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(252, 31);
+            this.label2.TabIndex = 213;
+            this.label2.Text = " INSERISCI DATI SPEDIZIONE";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(43, 227);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(83, 17);
+            this.label19.TabIndex = 210;
+            this.label19.Text = "TELEFONO";
+            // 
+            // txtcitta
+            // 
+            this.txtcitta.Location = new System.Drawing.Point(138, 186);
+            this.txtcitta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtcitta.Name = "txtcitta";
+            this.txtcitta.Size = new System.Drawing.Size(131, 22);
+            this.txtcitta.TabIndex = 209;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(54, 189);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(47, 17);
+            this.label17.TabIndex = 208;
+            this.label17.Text = "CITTA";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label6.Location = new System.Drawing.Point(125, -27);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(288, 17);
+            this.label6.TabIndex = 207;
+            this.label6.Text = "INSERISCI I DATI PER LA SPEDIZIONE";
+            // 
+            // txtindirizzo
+            // 
+            this.txtindirizzo.Location = new System.Drawing.Point(136, 145);
+            this.txtindirizzo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtindirizzo.Name = "txtindirizzo";
+            this.txtindirizzo.Size = new System.Drawing.Size(167, 22);
+            this.txtindirizzo.TabIndex = 206;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(52, 72);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(49, 17);
+            this.label10.TabIndex = 201;
+            this.label10.Text = "NOME";
+            // 
+            // txtcognome
+            // 
+            this.txtcognome.Location = new System.Drawing.Point(136, 108);
+            this.txtcognome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtcognome.Name = "txtcognome";
+            this.txtcognome.Size = new System.Drawing.Size(167, 22);
+            this.txtcognome.TabIndex = 205;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(37, 111);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(80, 17);
+            this.label9.TabIndex = 202;
+            this.label9.Text = "COGNOME";
+            // 
+            // txtnome
+            // 
+            this.txtnome.Location = new System.Drawing.Point(136, 69);
+            this.txtnome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtnome.Name = "txtnome";
+            this.txtnome.Size = new System.Drawing.Size(167, 22);
+            this.txtnome.TabIndex = 204;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(41, 150);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(76, 17);
+            this.label5.TabIndex = 203;
+            this.label5.Text = "INDIRIZZO";
+            // 
             // PizzeriaView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Firebrick;
             this.ClientSize = new System.Drawing.Size(1150, 736);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
@@ -292,6 +447,8 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -317,6 +474,20 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnConfermaDatiCliente;
+        private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox txtcitta;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtindirizzo;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtcognome;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtnome;
+        private System.Windows.Forms.Label label5;
     }
 }
 
