@@ -63,6 +63,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnConfermaOrdine = new System.Windows.Forms.Button();
+            this.btnRimuoviMenu = new System.Windows.Forms.Button();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.chNomeMenu = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chpizza = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chbevanda = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chprezzo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -427,6 +433,8 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.LightCoral;
+            this.panel3.Controls.Add(this.btnRimuoviMenu);
+            this.panel3.Controls.Add(this.listView1);
             this.panel3.Controls.Add(this.btnConfermaOrdine);
             this.panel3.Location = new System.Drawing.Point(23, 375);
             this.panel3.Name = "panel3";
@@ -441,6 +449,53 @@
             this.btnConfermaOrdine.TabIndex = 215;
             this.btnConfermaOrdine.Text = "CONFERMA ORDINE";
             this.btnConfermaOrdine.UseVisualStyleBackColor = true;
+            // 
+            // btnRimuoviMenu
+            // 
+            this.btnRimuoviMenu.Location = new System.Drawing.Point(137, 273);
+            this.btnRimuoviMenu.Name = "btnRimuoviMenu";
+            this.btnRimuoviMenu.Size = new System.Drawing.Size(135, 60);
+            this.btnRimuoviMenu.TabIndex = 225;
+            this.btnRimuoviMenu.Text = "RIMUOVI MENU SELEZIONATI";
+            this.btnRimuoviMenu.UseVisualStyleBackColor = true;
+            // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.chNomeMenu,
+            this.chpizza,
+            this.chbevanda,
+            this.chprezzo});
+            this.listView1.FullRowSelect = true;
+            this.listView1.GridLines = true;
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(37, 25);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(555, 231);
+            this.listView1.TabIndex = 224;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // chNomeMenu
+            // 
+            this.chNomeMenu.Text = "Nome Menu";
+            this.chNomeMenu.Width = 80;
+            // 
+            // chpizza
+            // 
+            this.chpizza.Text = "Pizza";
+            this.chpizza.Width = 180;
+            // 
+            // chbevanda
+            // 
+            this.chbevanda.Text = "Bevanda";
+            this.chbevanda.Width = 105;
+            // 
+            // chprezzo
+            // 
+            this.chprezzo.Text = "Prezzo";
+            this.chprezzo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.chprezzo.Width = 45;
             // 
             // PizzeriaView
             // 
@@ -513,6 +568,12 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnConfermaOrdine;
+        private System.Windows.Forms.Button btnRimuoviMenu;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader chNomeMenu;
+        private System.Windows.Forms.ColumnHeader chpizza;
+        private System.Windows.Forms.ColumnHeader chbevanda;
+        private System.Windows.Forms.ColumnHeader chprezzo;
     }
 }
 
