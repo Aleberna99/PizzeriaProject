@@ -31,7 +31,7 @@ namespace MVCView
             city.Text = "";
             telefon.Text = "";
         }
-        public bool ControlTextBox()
+        public bool ControllTextBox()
         {
             return !string.IsNullOrEmpty(name.Text)
                 && !string.IsNullOrEmpty(surname.Text)
