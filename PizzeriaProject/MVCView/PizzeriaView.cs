@@ -65,6 +65,7 @@ namespace WinFormMVC.View
                 panel1.Enabled = false;
                 panel3.Enabled = false;
                 panel2.Enabled = true;
+                controllComboBox.ResetComboBox();
             }
             else
             {
@@ -91,11 +92,11 @@ namespace WinFormMVC.View
             }
         }
 
-        private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
+
+        private void txtTelefono_KeyPress_1(object sender, KeyPressEventArgs e)
         {
             this.controllDataClient.ControllInt(e);
         }
-
 
 
 
@@ -184,5 +185,6 @@ namespace WinFormMVC.View
         public string AddressClient => this.txtindirizzo.Text;
 
         public long TelefonClient => long.Parse(this.txtTelefono.Text);
+
     }
 }

@@ -360,6 +360,7 @@
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(131, 22);
             this.txtTelefono.TabIndex = 215;
+            this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress_1);
             // 
             // label2
             // 

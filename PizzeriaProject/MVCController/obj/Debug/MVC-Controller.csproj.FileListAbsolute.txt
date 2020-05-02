@@ -9,3 +9,14 @@ C:\Users\Roberto\Desktop\PizzeriaProject - Copia\PizzeriaProject\MVCController\o
 C:\Users\Roberto\Desktop\PizzeriaProject - Copia\PizzeriaProject\MVCController\obj\Debug\MVC-Controller.csproj.CopyComplete
 C:\Users\Roberto\Desktop\PizzeriaProject - Copia\PizzeriaProject\MVCController\obj\Debug\MVCController.dll
 C:\Users\Roberto\Desktop\PizzeriaProject - Copia\PizzeriaProject\MVCController\obj\Debug\MVCController.pdb
+C:\Users\Roberto\Desktop\PMO\PizzeriaProject\PizzeriaProject\MVCController\bin\Debug\MVCController.dll
+C:\Users\Roberto\Desktop\PMO\PizzeriaProject\PizzeriaProject\MVCController\bin\Debug\MVCController.pdb
+C:\Users\Roberto\Desktop\PMO\PizzeriaProject\PizzeriaProject\MVCController\bin\Debug\MVCModal.dll
+C:\Users\Roberto\Desktop\PMO\PizzeriaProject\PizzeriaProject\MVCController\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Roberto\Desktop\PMO\PizzeriaProject\PizzeriaProject\MVCController\bin\Debug\MVCModal.pdb
+C:\Users\Roberto\Desktop\PMO\PizzeriaProject\PizzeriaProject\MVCController\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Roberto\Desktop\PMO\PizzeriaProject\PizzeriaProject\MVCController\obj\Debug\MVC-Controller.csprojAssemblyReference.cache
+C:\Users\Roberto\Desktop\PMO\PizzeriaProject\PizzeriaProject\MVCController\obj\Debug\MVC-Controller.csproj.CoreCompileInputs.cache
+C:\Users\Roberto\Desktop\PMO\PizzeriaProject\PizzeriaProject\MVCController\obj\Debug\MVC-Controller.csproj.CopyComplete
+C:\Users\Roberto\Desktop\PMO\PizzeriaProject\PizzeriaProject\MVCController\obj\Debug\MVCController.dll
+C:\Users\Roberto\Desktop\PMO\PizzeriaProject\PizzeriaProject\MVCController\obj\Debug\MVCController.pdb
