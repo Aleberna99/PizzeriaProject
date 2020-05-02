@@ -42,13 +42,13 @@
   <ItemGroup>
     <Compile Include="Client.cs" />
     <Compile Include="Database\DBHendler.cs" />
-    <Compile Include="Drink.cs" />
+    <Compile Include="Leaf\Drink.cs" />
     <Compile Include="Database\IDatabase.cs" />
-    <Compile Include="IOrder.cs" />
-    <Compile Include="IOrderExtensions.cs" />
-    <Compile Include="IVisitor.cs" />
-    <Compile Include="Menu.cs" />
-    <Compile Include="Pizza.cs" />
+    <Compile Include="Interface\IOrder.cs" />
+    <Compile Include="Extensions\IOrderExtensions.cs" />
+    <Compile Include="Interface\IVisitor.cs" />
+    <Compile Include="Composite\Menu.cs" />
+    <Compile Include="Leaf\Pizza.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
