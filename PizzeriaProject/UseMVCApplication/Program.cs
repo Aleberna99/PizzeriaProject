@@ -17,7 +17,12 @@ namespace UseMVCApplication
         [STAThread]
         static void Main()
         {
-            
+            PizzeriaView view = new PizzeriaView();
+            view.Visible = false;
+
+            PizzeriaController controller = new PizzeriaController(view, @"C:\Users\Roberto\Desktop\PizzeriaProject - Copia\PizzeriaProject\db2.txt");
+
+            view.ShowDialog();
         }
     }
 }
