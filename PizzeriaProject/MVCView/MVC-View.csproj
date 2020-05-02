@@ -38,8 +38,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ControllComboBox.cs" />
-    <Compile Include="ControllDataClient.cs" />
+    <Compile Include="ControllData\ControllComboBox.cs" />
+    <Compile Include="ControllData\ControllDataClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PizzeriaView.cs">
       <SubType>Form</SubType>
