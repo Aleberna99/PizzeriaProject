@@ -91,63 +91,98 @@ namespace WinFormMVC.View
             }
         }
 
+        private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            this.controllDataClient.ControllInt(e);
+        }
+
 
 
 
         public void SetController(PizzeriaController controller)
         {
-            throw new NotImplementedException();
+            _controller = controller;
         }
 
         public void AddInListView(IOrder menu, Drink drink, Pizza pizza)
         {
-            throw new NotImplementedException();
+            ListViewItem item;
+            item = menu.ToListViewItem(drink, pizza);
+            listView1.Items.Add(item);
         }
 
         public void PrintCalculations(TotalPrice totalPrice, AveragePrice averagePrice, TotalQuantity totalQuantity)
         {
-            throw new NotImplementedException();
+            txtPrezzoBevande.Text = totalPrice.GetTotalDrink().ToString();
+            txtPrezzoPizze.Text = totalPrice.GetTotalPizze().ToString();
+            txtPrezzoMenu.Text = totalPrice.GetTotalMenu().ToString();
+
+            txtPrezzoMedioBevande.Text = averagePrice.ResultBevanda().ToString();
+            txtPrezzoMedioPizze.Text = averagePrice.ResultPizza().ToString();
+            txtPrezzoMedioMenu.Text = averagePrice.ResultMenu().ToString();
+
+            txtQuantitaMenu.Text = totalQuantity.GetTotalMenu().ToString();
         }
 
         public void RemoveOnListView()
         {
-            throw new NotImplementedException();
+            foreach (ListViewItem listItem in this.listView1.SelectedItems)
+            {
+                listView1.Items.Remove(listView1.SelectedItems[0]);
+            }
         }
 
-        public bool PrintReceipt(IOrder ordine, Client cliente)
+        public bool PrintReceipt(IOrder order, Client client)
         {
-            throw new NotImplementedException();
+            bool confirm = false;
+
+            if (MessageBox.Show(order.ReturnName() + "\n\n" + order.show() + client.show(), "CONFERMARE L'ORDINE ? ", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                if (MessageBox.Show("GRAZIE PER AVER ACQUISTATO DA ALE PIZZA. \nIL SUO ORDINE VERRA' CONSEGNATO AL PIU' PRESTO", "ACQIUSTO CONFERMATO", MessageBoxButtons.OK) == DialogResult.OK)
+                {
+                    confirm = true;
+                }
+            }
+
+            return confirm;
         }
 
         public string ReturnNameMenuSelected()
         {
-            throw new NotImplementedException();
+            if (this.listView1.SelectedItems.Count > 0)
+                return this.listView1.SelectedItems[0].Text;
+            else
+                return "";
         }
 
         public void CloseProgramm()
         {
-            throw new NotImplementedException();
+            Close();
         }
 
         public void ModifyOrder()
         {
-            throw new NotImplementedException();
+            panel1.Enabled = true;
+            panel2.Enabled = false;
+            panel3.Enabled = true;
         }
 
-        public string NamePizza => throw new NotImplementedException();
 
-        public string NameDrink => throw new NotImplementedException();
+        public string NamePizza => this.cmbPizza.Text;
 
-        public double PriceDrink => throw new NotImplementedException();
+        public string NameDrink => this.cmbBevanda.Text;
 
-        public string NameClient => throw new NotImplementedException();
+        public double PriceDrink => double.Parse(this.txtPrezzoBevanda.Text);
 
-        public string SurnameClient => throw new NotImplementedException();
 
-        public string CityClient => throw new NotImplementedException();
+        public string NameClient => this.txtnome.Text;
 
-        public string AddressClient => throw new NotImplementedException();
+        public string SurnameClient => this.txtcognome.Text;
 
-        public long TelefonClient => throw new NotImplementedException();
+        public string CityClient => txtcitta.Text;
+
+        public string AddressClient => this.txtindirizzo.Text;
+
+        public long TelefonClient => long.Parse(this.txtTelefono.Text);
     }
 }
