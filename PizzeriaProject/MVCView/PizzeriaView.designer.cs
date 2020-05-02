@@ -62,13 +62,6 @@
             this.txtnome = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnConfermaOrdine = new System.Windows.Forms.Button();
-            this.btnRimuoviMenu = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.chNomeMenu = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.chpizza = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.chbevanda = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.chprezzo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.txtQuantitaMenu = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
@@ -89,6 +82,13 @@
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.txtPrezzoMenu = new System.Windows.Forms.TextBox();
+            this.btnRimuoviMenu = new System.Windows.Forms.Button();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.chNomeMenu = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chpizza = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chbevanda = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chprezzo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnConfermaOrdine = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -248,6 +248,7 @@
             this.cmbBevanda.Name = "cmbBevanda";
             this.cmbBevanda.Size = new System.Drawing.Size(236, 24);
             this.cmbBevanda.TabIndex = 218;
+            this.cmbBevanda.SelectedIndexChanged += new System.EventHandler(this.cmbBevanda_SelectedIndexChanged);
             // 
             // cmbPizza
             // 
@@ -278,6 +279,7 @@
             this.cmbPizza.Name = "cmbPizza";
             this.cmbPizza.Size = new System.Drawing.Size(236, 24);
             this.cmbPizza.TabIndex = 217;
+            this.cmbPizza.SelectedIndexChanged += new System.EventHandler(this.cmbPizza_SelectedIndexChanged);
             // 
             // btnAggiungiMenu
             // 
@@ -287,6 +289,7 @@
             this.btnAggiungiMenu.TabIndex = 214;
             this.btnAggiungiMenu.Text = "AGGIUNGI MENU";
             this.btnAggiungiMenu.UseVisualStyleBackColor = true;
+            this.btnAggiungiMenu.Click += new System.EventHandler(this.btnAggiungiMenu_Click);
             // 
             // label7
             // 
@@ -348,6 +351,7 @@
             this.btnConfermaDatiCliente.TabIndex = 248;
             this.btnConfermaDatiCliente.Text = "CONFERMA DATI CLIENTE";
             this.btnConfermaDatiCliente.UseVisualStyleBackColor = true;
+            this.btnConfermaDatiCliente.Click += new System.EventHandler(this.btnConfermaDatiCliente_Click);
             // 
             // txtTelefono
             // 
@@ -486,62 +490,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1102, 352);
             this.panel3.TabIndex = 249;
-            // 
-            // btnConfermaOrdine
-            // 
-            this.btnConfermaOrdine.Location = new System.Drawing.Point(812, 268);
-            this.btnConfermaOrdine.Name = "btnConfermaOrdine";
-            this.btnConfermaOrdine.Size = new System.Drawing.Size(160, 70);
-            this.btnConfermaOrdine.TabIndex = 215;
-            this.btnConfermaOrdine.Text = "CONFERMA ORDINE";
-            this.btnConfermaOrdine.UseVisualStyleBackColor = true;
-            // 
-            // btnRimuoviMenu
-            // 
-            this.btnRimuoviMenu.Location = new System.Drawing.Point(137, 273);
-            this.btnRimuoviMenu.Name = "btnRimuoviMenu";
-            this.btnRimuoviMenu.Size = new System.Drawing.Size(135, 60);
-            this.btnRimuoviMenu.TabIndex = 225;
-            this.btnRimuoviMenu.Text = "RIMUOVI MENU SELEZIONATI";
-            this.btnRimuoviMenu.UseVisualStyleBackColor = true;
-            // 
-            // listView1
-            // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.chNomeMenu,
-            this.chpizza,
-            this.chbevanda,
-            this.chprezzo});
-            this.listView1.FullRowSelect = true;
-            this.listView1.GridLines = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(37, 25);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(555, 231);
-            this.listView1.TabIndex = 224;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // chNomeMenu
-            // 
-            this.chNomeMenu.Text = "Nome Menu";
-            this.chNomeMenu.Width = 80;
-            // 
-            // chpizza
-            // 
-            this.chpizza.Text = "Pizza";
-            this.chpizza.Width = 180;
-            // 
-            // chbevanda
-            // 
-            this.chbevanda.Text = "Bevanda";
-            this.chbevanda.Width = 105;
-            // 
-            // chprezzo
-            // 
-            this.chprezzo.Text = "Prezzo";
-            this.chprezzo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.chprezzo.Width = 45;
             // 
             // txtQuantitaMenu
             // 
@@ -728,6 +676,64 @@
             this.txtPrezzoMenu.Size = new System.Drawing.Size(69, 22);
             this.txtPrezzoMenu.TabIndex = 248;
             this.txtPrezzoMenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btnRimuoviMenu
+            // 
+            this.btnRimuoviMenu.Location = new System.Drawing.Point(137, 273);
+            this.btnRimuoviMenu.Name = "btnRimuoviMenu";
+            this.btnRimuoviMenu.Size = new System.Drawing.Size(135, 60);
+            this.btnRimuoviMenu.TabIndex = 225;
+            this.btnRimuoviMenu.Text = "RIMUOVI MENU SELEZIONATI";
+            this.btnRimuoviMenu.UseVisualStyleBackColor = true;
+            this.btnRimuoviMenu.Click += new System.EventHandler(this.btnRimuoviMenu_Click);
+            // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.chNomeMenu,
+            this.chpizza,
+            this.chbevanda,
+            this.chprezzo});
+            this.listView1.FullRowSelect = true;
+            this.listView1.GridLines = true;
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(37, 25);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(555, 231);
+            this.listView1.TabIndex = 224;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // chNomeMenu
+            // 
+            this.chNomeMenu.Text = "Nome Menu";
+            this.chNomeMenu.Width = 80;
+            // 
+            // chpizza
+            // 
+            this.chpizza.Text = "Pizza";
+            this.chpizza.Width = 180;
+            // 
+            // chbevanda
+            // 
+            this.chbevanda.Text = "Bevanda";
+            this.chbevanda.Width = 105;
+            // 
+            // chprezzo
+            // 
+            this.chprezzo.Text = "Prezzo";
+            this.chprezzo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.chprezzo.Width = 45;
+            // 
+            // btnConfermaOrdine
+            // 
+            this.btnConfermaOrdine.Location = new System.Drawing.Point(812, 268);
+            this.btnConfermaOrdine.Name = "btnConfermaOrdine";
+            this.btnConfermaOrdine.Size = new System.Drawing.Size(160, 70);
+            this.btnConfermaOrdine.TabIndex = 215;
+            this.btnConfermaOrdine.Text = "CONFERMA ORDINE";
+            this.btnConfermaOrdine.UseVisualStyleBackColor = true;
+            this.btnConfermaOrdine.Click += new System.EventHandler(this.btnConfermaOrdine_Click);
             // 
             // PizzeriaView
             // 
