@@ -69,6 +69,26 @@
             this.chpizza = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chbevanda = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chprezzo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.txtQuantitaMenu = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.txtPrezzoMedioBevande = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.txtPrezzoMedioPizze = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.txtPrezzoMedioMenu = new System.Windows.Forms.TextBox();
+            this.txtPrezzoPizze = new System.Windows.Forms.TextBox();
+            this.txtPrezzoBevande = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.txtPrezzoMenu = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -78,6 +98,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox4
@@ -433,6 +459,26 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.LightCoral;
+            this.panel3.Controls.Add(this.txtQuantitaMenu);
+            this.panel3.Controls.Add(this.label23);
+            this.panel3.Controls.Add(this.pictureBox12);
+            this.panel3.Controls.Add(this.pictureBox11);
+            this.panel3.Controls.Add(this.pictureBox10);
+            this.panel3.Controls.Add(this.txtPrezzoMedioBevande);
+            this.panel3.Controls.Add(this.label21);
+            this.panel3.Controls.Add(this.pictureBox9);
+            this.panel3.Controls.Add(this.txtPrezzoMedioPizze);
+            this.panel3.Controls.Add(this.label20);
+            this.panel3.Controls.Add(this.pictureBox8);
+            this.panel3.Controls.Add(this.txtPrezzoMedioMenu);
+            this.panel3.Controls.Add(this.txtPrezzoPizze);
+            this.panel3.Controls.Add(this.txtPrezzoBevande);
+            this.panel3.Controls.Add(this.label14);
+            this.panel3.Controls.Add(this.label13);
+            this.panel3.Controls.Add(this.label12);
+            this.panel3.Controls.Add(this.label8);
+            this.panel3.Controls.Add(this.pictureBox7);
+            this.panel3.Controls.Add(this.txtPrezzoMenu);
             this.panel3.Controls.Add(this.btnRimuoviMenu);
             this.panel3.Controls.Add(this.listView1);
             this.panel3.Controls.Add(this.btnConfermaOrdine);
@@ -497,6 +543,192 @@
             this.chprezzo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.chprezzo.Width = 45;
             // 
+            // txtQuantitaMenu
+            // 
+            this.txtQuantitaMenu.Enabled = false;
+            this.txtQuantitaMenu.Location = new System.Drawing.Point(907, 209);
+            this.txtQuantitaMenu.Name = "txtQuantitaMenu";
+            this.txtQuantitaMenu.Size = new System.Drawing.Size(69, 22);
+            this.txtQuantitaMenu.TabIndex = 267;
+            this.txtQuantitaMenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(699, 212);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(195, 17);
+            this.label23.TabIndex = 266;
+            this.label23.Text = "QUANTITA MENU ORDINATI:";
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox12.BackgroundImage")));
+            this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox12.Location = new System.Drawing.Point(980, 145);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(18, 18);
+            this.pictureBox12.TabIndex = 265;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox11.BackgroundImage")));
+            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox11.Location = new System.Drawing.Point(980, 175);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(18, 18);
+            this.pictureBox11.TabIndex = 264;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox10.BackgroundImage")));
+            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox10.Location = new System.Drawing.Point(980, 109);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(18, 18);
+            this.pictureBox10.TabIndex = 263;
+            this.pictureBox10.TabStop = false;
+            // 
+            // txtPrezzoMedioBevande
+            // 
+            this.txtPrezzoMedioBevande.Enabled = false;
+            this.txtPrezzoMedioBevande.Location = new System.Drawing.Point(907, 104);
+            this.txtPrezzoMedioBevande.Name = "txtPrezzoMedioBevande";
+            this.txtPrezzoMedioBevande.Size = new System.Drawing.Size(69, 22);
+            this.txtPrezzoMedioBevande.TabIndex = 262;
+            this.txtPrezzoMedioBevande.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(699, 107);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(190, 17);
+            this.label21.TabIndex = 261;
+            this.label21.Text = "PREZZO MEDIO BEVANDE :";
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.BackgroundImage")));
+            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox9.Location = new System.Drawing.Point(980, 79);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(18, 18);
+            this.pictureBox9.TabIndex = 260;
+            this.pictureBox9.TabStop = false;
+            // 
+            // txtPrezzoMedioPizze
+            // 
+            this.txtPrezzoMedioPizze.Enabled = false;
+            this.txtPrezzoMedioPizze.Location = new System.Drawing.Point(907, 76);
+            this.txtPrezzoMedioPizze.Name = "txtPrezzoMedioPizze";
+            this.txtPrezzoMedioPizze.Size = new System.Drawing.Size(69, 22);
+            this.txtPrezzoMedioPizze.TabIndex = 259;
+            this.txtPrezzoMedioPizze.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(712, 79);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(164, 17);
+            this.label20.TabIndex = 258;
+            this.label20.Text = "PREZZO MEDIO PIZZE :";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.BackgroundImage")));
+            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox8.Location = new System.Drawing.Point(980, 51);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(18, 18);
+            this.pictureBox8.TabIndex = 257;
+            this.pictureBox8.TabStop = false;
+            // 
+            // txtPrezzoMedioMenu
+            // 
+            this.txtPrezzoMedioMenu.Enabled = false;
+            this.txtPrezzoMedioMenu.Location = new System.Drawing.Point(907, 48);
+            this.txtPrezzoMedioMenu.Name = "txtPrezzoMedioMenu";
+            this.txtPrezzoMedioMenu.Size = new System.Drawing.Size(69, 22);
+            this.txtPrezzoMedioMenu.TabIndex = 256;
+            this.txtPrezzoMedioMenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtPrezzoPizze
+            // 
+            this.txtPrezzoPizze.Enabled = false;
+            this.txtPrezzoPizze.Location = new System.Drawing.Point(907, 145);
+            this.txtPrezzoPizze.Name = "txtPrezzoPizze";
+            this.txtPrezzoPizze.Size = new System.Drawing.Size(69, 22);
+            this.txtPrezzoPizze.TabIndex = 255;
+            this.txtPrezzoPizze.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtPrezzoBevande
+            // 
+            this.txtPrezzoBevande.Enabled = false;
+            this.txtPrezzoBevande.Location = new System.Drawing.Point(907, 172);
+            this.txtPrezzoBevande.Name = "txtPrezzoBevande";
+            this.txtPrezzoBevande.Size = new System.Drawing.Size(69, 22);
+            this.txtPrezzoBevande.TabIndex = 254;
+            this.txtPrezzoBevande.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(711, 51);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(165, 17);
+            this.label14.TabIndex = 253;
+            this.label14.Text = "PREZZO MEDIO MENU :";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(706, 148);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(175, 17);
+            this.label13.TabIndex = 252;
+            this.label13.Text = "TOTALE PREZZO PIZZE :";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(694, 175);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(201, 17);
+            this.label12.TabIndex = 251;
+            this.label12.Text = "TOTALE PREZZO BEVANDE :";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(367, 300);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(131, 17);
+            this.label8.TabIndex = 250;
+            this.label8.Text = "IMPORTO TOTALE";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox7.Location = new System.Drawing.Point(594, 299);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(18, 18);
+            this.pictureBox7.TabIndex = 249;
+            this.pictureBox7.TabStop = false;
+            // 
+            // txtPrezzoMenu
+            // 
+            this.txtPrezzoMenu.Enabled = false;
+            this.txtPrezzoMenu.Location = new System.Drawing.Point(519, 297);
+            this.txtPrezzoMenu.Name = "txtPrezzoMenu";
+            this.txtPrezzoMenu.Size = new System.Drawing.Size(69, 22);
+            this.txtPrezzoMenu.TabIndex = 248;
+            this.txtPrezzoMenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // PizzeriaView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -527,6 +759,13 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -574,6 +813,26 @@
         private System.Windows.Forms.ColumnHeader chpizza;
         private System.Windows.Forms.ColumnHeader chbevanda;
         private System.Windows.Forms.ColumnHeader chprezzo;
+        private System.Windows.Forms.TextBox txtQuantitaMenu;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.TextBox txtPrezzoMedioBevande;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.TextBox txtPrezzoMedioPizze;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.TextBox txtPrezzoMedioMenu;
+        private System.Windows.Forms.TextBox txtPrezzoPizze;
+        private System.Windows.Forms.TextBox txtPrezzoBevande;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.TextBox txtPrezzoMenu;
     }
 }
 
