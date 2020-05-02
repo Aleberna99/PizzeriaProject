@@ -36,6 +36,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AveragePrice.cs" />
     <Compile Include="Builder\ConcreteBuilder.cs" />
     <Compile Include="Builder\Cook.cs" />
     <Compile Include="Builder\IBuilder.cs" />
