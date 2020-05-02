@@ -174,7 +174,7 @@
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Location = new System.Drawing.Point(22, 88);
+            this.panel1.Location = new System.Drawing.Point(22, 87);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(557, 281);
             this.panel1.TabIndex = 78;
@@ -334,7 +334,7 @@
             this.panel2.Controls.Add(this.txtnome);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Enabled = false;
-            this.panel2.Location = new System.Drawing.Point(585, 88);
+            this.panel2.Location = new System.Drawing.Point(585, 87);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(540, 281);
             this.panel2.TabIndex = 79;
@@ -482,7 +482,7 @@
             this.panel3.Controls.Add(this.btnRimuoviMenu);
             this.panel3.Controls.Add(this.listView1);
             this.panel3.Controls.Add(this.btnConfermaOrdine);
-            this.panel3.Location = new System.Drawing.Point(23, 375);
+            this.panel3.Location = new System.Drawing.Point(23, 374);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1102, 352);
             this.panel3.TabIndex = 249;
