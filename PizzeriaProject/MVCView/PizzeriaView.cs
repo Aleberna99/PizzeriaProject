@@ -29,16 +29,21 @@ namespace WinFormMVC.View
             if (cmbPizza.Text != "" && cmbBevanda.Text != "")
             {
                 this._controller.AddMenu();
-                controllComboBox.ResetComboBox();
-                txtPrezzoBevanda.Text = "";
-                txtPrezzoPizza.Text = "";
-                lblIngredienti.Text = "";
+                ResetMenu();
             }
             else
             {
                 MessageBox.Show(" IMMETTERE LA PIZZA E LA BEVANDA CORRETTAMENTE !!", "ERRORE", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
+        }
+
+        private void ResetMenu()
+        {
+            controllComboBox.ResetComboBox();
+            txtPrezzoBevanda.Text = "";
+            txtPrezzoPizza.Text = "";
+            lblIngredienti.Text = "";
         }
 
         private void btnRimuoviMenu_Click(object sender, EventArgs e)
@@ -65,7 +70,7 @@ namespace WinFormMVC.View
                 panel1.Enabled = false;
                 panel3.Enabled = false;
                 panel2.Enabled = true;
-                controllComboBox.ResetComboBox();
+                ResetMenu();
             }
             else
             {
