@@ -110,6 +110,19 @@ namespace WinFormMVC.Controller
             UpdateCalculation();
         }
 
+        //STAMPA MENU
+
+        public void ShowMenu()
+        {
+            IOrder m;
+            string nameMenu;
+
+            nameMenu = view.ReturnNameMenuSelected();
+            m = order.SearchMenu(nameMenu);
+            view.PrintMenu(m);
+
+        }
+
         //CREO CLIENTE
 
         public void CreateClient()

@@ -10,6 +10,7 @@ namespace WinFormMVC.Controller
         void AddInListView(IOrder menu, Drink drink, Pizza pizza);
         void PrintCalculations(TotalPrice totalPrice, AveragePrice averagePrice, TotalQuantity totalQuantity);
         void RemoveOnListView();
+        void PrintMenu(IOrder menu);
         bool PrintReceipt(IOrder ordine, Client cliente);
         string ReturnNameMenuSelected();
         void CloseProgramm();

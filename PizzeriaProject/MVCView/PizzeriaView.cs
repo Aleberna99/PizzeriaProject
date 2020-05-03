@@ -105,6 +105,11 @@ namespace WinFormMVC.View
             this.controllDataClient.ControllInt(e);
         }
 
+        private void listView1_DoubleClick(object sender, EventArgs e)
+        {
+            this._controller.ShowMenu();
+        }
+
         #endregion
 
         #region METHODS
@@ -139,6 +144,11 @@ namespace WinFormMVC.View
             {
                 listView1.Items.Remove(listView1.SelectedItems[0]);
             }
+        }
+
+        public void PrintMenu(IOrder menu)
+        {
+            MessageBox.Show(menu.show());
         }
 
         public bool PrintReceipt(IOrder order, Client client)
@@ -197,7 +207,8 @@ namespace WinFormMVC.View
 
         public long TelefonClient => long.Parse(this.txtTelefono.Text);
 
-        #endregion 
+        #endregion
+
 
     }
 }
