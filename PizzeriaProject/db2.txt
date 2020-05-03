@@ -1,0 +1,69 @@
+
+
+[
+  {
+    "Nome ordine ": "ORDINE FINALE DI MARIO ROSSI",
+    "Prezzo ordine totale": 29.0
+  },
+  {
+    "Nome": "MARIO",
+    "Cognome": "ROSSI",
+    "Indirizzo": "VIA GIOTTO 9",
+    "Città": "SENIGALLIA",
+    "Telefono": 3786782683
+  },
+  {
+    "Nome menu": "MENU 1",
+    "Descrizione": "PIZZA PROSCIUTTO E FUNGHI\nIngredienti : Mozzarella, Prosciutto cotto, Funghi\nPrezzo : 7,5$\n\nBIRRA 0,33 L\nPrezzo : 3,5$\n\n",
+    "Prezzo": 11.0
+  },
+  {
+    "Nome menu": "MENU 2",
+    "Descrizione": "PIZZA ROSMARINO\nIngredienti : Rosmarino\nPrezzo : 5$\n\nTHE' 0,33 L\nPrezzo : 3$\n\n",
+    "Prezzo": 8.0
+  },
+  {
+    "Nome menu": "MENU 3",
+    "Descrizione": "PIZZA CAPRICCIOSA\nIngredienti : Pomodoro, Prosciutto cotto, Mozzarella, Funghi, Carciofini\nPrezzo : 7$\n\nACQUA 1 L\nPrezzo : 3$\n\n",
+    "Prezzo": 10.0
+  }
+]
+
+[
+  {
+    "Nome ordine ": "ORDINE FINALE DI LUIGI BIANCHI",
+    "Prezzo ordine totale": 52.0
+  },
+  {
+    "Nome": "LUIGI",
+    "Cognome": "BIANCHI",
+    "Indirizzo": "VIA RAFFAELLO 4",
+    "Città": "URBINO",
+    "Telefono": 3265321531
+  },
+  {
+    "Nome menu": "MENU 1",
+    "Descrizione": "PIZZA OLIVE\nIngredienti : Pomodoro, Olive\nPrezzo : 7,5$\n\nCOCA COLA 0,33 L\nPrezzo : 2,5$\n\n",
+    "Prezzo": 10.0
+  },
+  {
+    "Nome menu": "MENU 2",
+    "Descrizione": "PIZZA FUNGHI\nIngredienti : Mozzarella, Pomodoro, Funghi\nPrezzo : 7$\n\nFANTA 0,33 L\nPrezzo : 2,5$\n\n",
+    "Prezzo": 9.5
+  },
+  {
+    "Nome menu": "MENU 3",
+    "Descrizione": "PIZZA 4 STAGIONI\nIngredienti : Mozzarella, Pomodoro, Funghi, Prosciutto cotto, Carciofini, Salame\nPrezzo : 8$\n\nBIRRA 0,66 L\nPrezzo : 4$\n\n",
+    "Prezzo": 12.0
+  },
+  {
+    "Nome menu": "MENU 4",
+    "Descrizione": "PIZZA SALSICCIA\nIngredienti : Mozzarella, Pomodoro, Salsiccia\nPrezzo : 7$\n\nACQUA 0,33 L\nPrezzo : 2$\n\n",
+    "Prezzo": 9.0
+  },
+  {
+    "Nome menu": "MENU 5",
+    "Descrizione": "PIZZA DIAVOLA\nIngredienti : Mozzarella, Pomodoro, Salame Piccante\nPrezzo : 7,5$\n\nBIRRA 0,66 L\nPrezzo : 4$\n\n",
+    "Prezzo": 11.5
+  }
+]
