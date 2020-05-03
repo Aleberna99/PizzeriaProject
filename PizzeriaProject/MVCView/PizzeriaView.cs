@@ -24,6 +24,8 @@ namespace WinFormMVC.View
             controllComboBox = new ControllComboBox(cmbBevanda, cmbPizza);
             controllDataClient = new ControllDataClient(txtnome, txtcognome, txtindirizzo, txtcitta, txtTelefono);
         }
+
+        #region BUTTONS
         private void btnAggiungiMenu_Click(object sender, EventArgs e)
         {
             if (cmbPizza.Text != "" && cmbBevanda.Text != "")
@@ -103,8 +105,9 @@ namespace WinFormMVC.View
             this.controllDataClient.ControllInt(e);
         }
 
+        #endregion
 
-
+        #region METHODS
         public void SetController(PizzeriaController controller)
         {
             _controller = controller;
@@ -173,6 +176,9 @@ namespace WinFormMVC.View
             panel3.Enabled = true;
         }
 
+        #endregion
+
+        #region PROPERTY
 
         public string NamePizza => this.cmbPizza.Text;
 
@@ -190,6 +196,8 @@ namespace WinFormMVC.View
         public string AddressClient => this.txtindirizzo.Text;
 
         public long TelefonClient => long.Parse(this.txtTelefono.Text);
+
+        #endregion 
 
     }
 }
