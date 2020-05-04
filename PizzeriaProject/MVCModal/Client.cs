@@ -11,16 +11,16 @@ namespace MVCModal
         public string Surname { get; set; }
         public string Address { get; set; }
         public string City { get; set; }
-        public long Telefon { get; set; }
+        public long Telephone { get; set; }
 
         public string ReturnName()
         {
             return Name + " " + Surname;
         }
 
-        public string show()
+        public string Show()
         {
-            return "DATI CLIENTE :\nNome : " + Name + "\nCognome : " + Surname + "\nIndirizzo : " + Address  + "\nCittà : " + City + "\nTelefono : " + Telefon;
+            return "DATI CLIENTE :\nNome : " + Name + "\nCognome : " + Surname + "\nIndirizzo : " + Address  + "\nCittà : " + City + "\nTelefono : " + Telephone;
         }
     }
 }

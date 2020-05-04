@@ -131,7 +131,7 @@ namespace WinFormMVC.Controller
             client.Surname = view.SurnameClient;
             client.City = view.CityClient;
             client.Address = view.AddressClient;
-            client.Telefon = view.TelefonClient;
+            client.Telephone = view.TelefonClient;
 
             CreateReceipt();
         }

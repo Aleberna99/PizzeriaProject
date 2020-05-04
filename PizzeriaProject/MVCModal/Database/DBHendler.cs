@@ -45,7 +45,7 @@ namespace MVCModal
                     {  "Cognome", cliente.Surname },
                     {  "Indirizzo", cliente.Address },
                     {  "Città", cliente.City  },
-                    {  "Telefono", cliente.Telefon },
+                    {  "Telefono", cliente.Telephone },
 
                 }),
 
