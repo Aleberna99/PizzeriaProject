@@ -21,14 +21,15 @@ namespace WinFormMVC.View
         public PizzeriaView()
         {
             InitializeComponent();
-            controllComboBox = new ControllComboBox(cmbBevanda, cmbPizza);
-            controllDataClient = new ControllDataClient(txtnome, txtcognome, txtindirizzo, txtcitta, txtTelefono);
+            controllComboBox = new ControllComboBox(cmbDrink, cmbPizza);
+            controllDataClient = new ControllDataClient(txtnome, txtcognome, txtindirizzo, txtcitta, txtTelephone);
         }
 
         #region BUTTONS
-        private void btnAggiungiMenu_Click(object sender, EventArgs e)
+
+        private void btnAddMenu_Click_1(object sender, EventArgs e)
         {
-            if (cmbPizza.Text != "" && cmbBevanda.Text != "")
+            if (cmbPizza.Text != "" && cmbDrink.Text != "")
             {
                 this._controller.AddMenu();
                 ResetMenu();
@@ -37,7 +38,6 @@ namespace WinFormMVC.View
             {
                 MessageBox.Show(" IMMETTERE LA PIZZA E LA BEVANDA CORRETTAMENTE !!", "ERRORE", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
 
         private void ResetMenu()
@@ -48,26 +48,26 @@ namespace WinFormMVC.View
             lblIngredienti.Text = "";
         }
 
-        private void btnRimuoviMenu_Click(object sender, EventArgs e)
+        private void btnRemoveMenu_Click_1(object sender, EventArgs e)
         {
             this._controller.RemoveMenu();
         }
 
-        private void cmbBevanda_SelectedIndexChanged(object sender, EventArgs e)
+        private void cmbDrink_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             txtPrezzoBevanda.Text = controllComboBox.ControllPriceDrink().ToString();
         }
+        
 
-        private void cmbPizza_SelectedIndexChanged(object sender, EventArgs e)
+            private void cmbPizza_SelectedIndexChanged(object sender, EventArgs e)
         {
             txtPrezzoPizza.Text = controllComboBox.ControllPricePizza().ToString();
             lblIngredienti.Text = controllComboBox.ControllIngredient().ToString();
         }
 
-
-        private void btnConfermaOrdine_Click(object sender, EventArgs e)
+        private void btnConfirmOrder_Click_1(object sender, EventArgs e)
         {
-            if (listView1.Items.Count > 0)
+            if (listViewOrder.Items.Count > 0)
             {
                 panel1.Enabled = false;
                 panel3.Enabled = false;
@@ -80,7 +80,7 @@ namespace WinFormMVC.View
             }
         }
 
-        private void btnConfermaDatiCliente_Click(object sender, EventArgs e)
+        private void btnConfirmDataClient_Click_1(object sender, EventArgs e)
         {
             if (controllDataClient.ControllTextBox())
             {
@@ -99,13 +99,12 @@ namespace WinFormMVC.View
             }
         }
 
-
-        private void txtTelefono_KeyPress_1(object sender, KeyPressEventArgs e)
+        private void txtTelephone_KeyPress_1(object sender, KeyPressEventArgs e)
         {
             this.controllDataClient.ControllInt(e);
         }
 
-        private void listView1_DoubleClick(object sender, EventArgs e)
+        private void listViewOrder_DoubleClick(object sender, EventArgs e)
         {
             this._controller.ShowMenu();
         }
@@ -122,7 +121,7 @@ namespace WinFormMVC.View
         {
             ListViewItem item;
             item = menu.ToListViewItem(drink, pizza);
-            listView1.Items.Add(item);
+            listViewOrder.Items.Add(item);
         }
 
         public void PrintCalculations(IVisitor totalPrice, IVisitor averagePrice, IVisitor totalQuantity)
@@ -140,9 +139,9 @@ namespace WinFormMVC.View
 
         public void RemoveOnListView()
         {
-            foreach (ListViewItem listItem in this.listView1.SelectedItems)
+            foreach (ListViewItem listItem in this.listViewOrder.SelectedItems)
             {
-                listView1.Items.Remove(listView1.SelectedItems[0]);
+                listViewOrder.Items.Remove(listViewOrder.SelectedItems[0]);
             }
         }
 
@@ -168,8 +167,8 @@ namespace WinFormMVC.View
 
         public string ReturnNameMenuSelected()
         {
-            if (this.listView1.SelectedItems.Count > 0)
-                return this.listView1.SelectedItems[0].Text;
+            if (this.listViewOrder.SelectedItems.Count > 0)
+                return this.listViewOrder.SelectedItems[0].Text;
             else
                 return "";
         }
@@ -192,7 +191,7 @@ namespace WinFormMVC.View
 
         public string NamePizza => this.cmbPizza.Text;
 
-        public string NameDrink => this.cmbBevanda.Text;
+        public string NameDrink => this.cmbDrink.Text;
 
         public double PriceDrink => double.Parse(this.txtPrezzoBevanda.Text);
 
@@ -205,7 +204,12 @@ namespace WinFormMVC.View
 
         public string AddressClient => this.txtindirizzo.Text;
 
-        public long TelefonClient => long.Parse(this.txtTelefono.Text);
+        public long TelefonClient => long.Parse(this.txtTelephone.Text);
+
+
+
+
+
 
         #endregion
 

@@ -41,15 +41,15 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.txtPrezzoBevanda = new System.Windows.Forms.TextBox();
             this.txtPrezzoPizza = new System.Windows.Forms.TextBox();
-            this.cmbBevanda = new System.Windows.Forms.ComboBox();
+            this.cmbDrink = new System.Windows.Forms.ComboBox();
             this.cmbPizza = new System.Windows.Forms.ComboBox();
-            this.btnAggiungiMenu = new System.Windows.Forms.Button();
+            this.btnAddMenu = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnConfermaDatiCliente = new System.Windows.Forms.Button();
-            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.btnConfirmDataClient = new System.Windows.Forms.Button();
+            this.txtTelephone = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.txtcitta = new System.Windows.Forms.TextBox();
@@ -82,13 +82,13 @@
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.txtPrezzoMenu = new System.Windows.Forms.TextBox();
-            this.btnRimuoviMenu = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.btnRemoveMenu = new System.Windows.Forms.Button();
+            this.listViewOrder = new System.Windows.Forms.ListView();
             this.chNomeMenu = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chpizza = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chbevanda = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chprezzo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.btnConfermaOrdine = new System.Windows.Forms.Button();
+            this.btnConfirmOrder = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -168,9 +168,9 @@
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.txtPrezzoBevanda);
             this.panel1.Controls.Add(this.txtPrezzoPizza);
-            this.panel1.Controls.Add(this.cmbBevanda);
+            this.panel1.Controls.Add(this.cmbDrink);
             this.panel1.Controls.Add(this.cmbPizza);
-            this.panel1.Controls.Add(this.btnAggiungiMenu);
+            this.panel1.Controls.Add(this.btnAddMenu);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label4);
@@ -233,10 +233,10 @@
             this.txtPrezzoPizza.Size = new System.Drawing.Size(64, 22);
             this.txtPrezzoPizza.TabIndex = 219;
             // 
-            // cmbBevanda
+            // cmbDrink
             // 
-            this.cmbBevanda.FormattingEnabled = true;
-            this.cmbBevanda.Items.AddRange(new object[] {
+            this.cmbDrink.FormattingEnabled = true;
+            this.cmbDrink.Items.AddRange(new object[] {
             "ACQUA 0,33 L",
             "ACQUA 1 L",
             "BIRRA 0,33 L",
@@ -244,11 +244,11 @@
             "COCA COLA 0,33 L",
             "FANTA 0,33 L",
             "THE\' 0,33 L"});
-            this.cmbBevanda.Location = new System.Drawing.Point(126, 159);
-            this.cmbBevanda.Name = "cmbBevanda";
-            this.cmbBevanda.Size = new System.Drawing.Size(236, 24);
-            this.cmbBevanda.TabIndex = 218;
-            this.cmbBevanda.SelectedIndexChanged += new System.EventHandler(this.cmbBevanda_SelectedIndexChanged);
+            this.cmbDrink.Location = new System.Drawing.Point(126, 159);
+            this.cmbDrink.Name = "cmbDrink";
+            this.cmbDrink.Size = new System.Drawing.Size(236, 24);
+            this.cmbDrink.TabIndex = 218;
+            this.cmbDrink.SelectedIndexChanged += new System.EventHandler(this.cmbDrink_SelectedIndexChanged_1);
             // 
             // cmbPizza
             // 
@@ -281,15 +281,15 @@
             this.cmbPizza.TabIndex = 217;
             this.cmbPizza.SelectedIndexChanged += new System.EventHandler(this.cmbPizza_SelectedIndexChanged);
             // 
-            // btnAggiungiMenu
+            // btnAddMenu
             // 
-            this.btnAggiungiMenu.Location = new System.Drawing.Point(209, 214);
-            this.btnAggiungiMenu.Name = "btnAggiungiMenu";
-            this.btnAggiungiMenu.Size = new System.Drawing.Size(130, 45);
-            this.btnAggiungiMenu.TabIndex = 214;
-            this.btnAggiungiMenu.Text = "AGGIUNGI MENU";
-            this.btnAggiungiMenu.UseVisualStyleBackColor = true;
-            this.btnAggiungiMenu.Click += new System.EventHandler(this.btnAggiungiMenu_Click);
+            this.btnAddMenu.Location = new System.Drawing.Point(209, 214);
+            this.btnAddMenu.Name = "btnAddMenu";
+            this.btnAddMenu.Size = new System.Drawing.Size(130, 45);
+            this.btnAddMenu.TabIndex = 214;
+            this.btnAddMenu.Text = "AGGIUNGI MENU";
+            this.btnAddMenu.UseVisualStyleBackColor = true;
+            this.btnAddMenu.Click += new System.EventHandler(this.btnAddMenu_Click_1);
             // 
             // label7
             // 
@@ -323,8 +323,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightCoral;
-            this.panel2.Controls.Add(this.btnConfermaDatiCliente);
-            this.panel2.Controls.Add(this.txtTelefono);
+            this.panel2.Controls.Add(this.btnConfirmDataClient);
+            this.panel2.Controls.Add(this.txtTelephone);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label19);
             this.panel2.Controls.Add(this.txtcitta);
@@ -342,25 +342,25 @@
             this.panel2.Size = new System.Drawing.Size(540, 281);
             this.panel2.TabIndex = 79;
             // 
-            // btnConfermaDatiCliente
+            // btnConfirmDataClient
             // 
-            this.btnConfermaDatiCliente.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnConfermaDatiCliente.Location = new System.Drawing.Point(364, 140);
-            this.btnConfermaDatiCliente.Name = "btnConfermaDatiCliente";
-            this.btnConfermaDatiCliente.Size = new System.Drawing.Size(135, 60);
-            this.btnConfermaDatiCliente.TabIndex = 248;
-            this.btnConfermaDatiCliente.Text = "CONFERMA DATI CLIENTE";
-            this.btnConfermaDatiCliente.UseVisualStyleBackColor = true;
-            this.btnConfermaDatiCliente.Click += new System.EventHandler(this.btnConfermaDatiCliente_Click);
+            this.btnConfirmDataClient.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnConfirmDataClient.Location = new System.Drawing.Point(364, 140);
+            this.btnConfirmDataClient.Name = "btnConfirmDataClient";
+            this.btnConfirmDataClient.Size = new System.Drawing.Size(135, 60);
+            this.btnConfirmDataClient.TabIndex = 248;
+            this.btnConfirmDataClient.Text = "CONFERMA DATI CLIENTE";
+            this.btnConfirmDataClient.UseVisualStyleBackColor = true;
+            this.btnConfirmDataClient.Click += new System.EventHandler(this.btnConfirmDataClient_Click_1);
             // 
-            // txtTelefono
+            // txtTelephone
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(138, 225);
-            this.txtTelefono.MaxLength = 10;
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(131, 22);
-            this.txtTelefono.TabIndex = 215;
-            this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress_1);
+            this.txtTelephone.Location = new System.Drawing.Point(138, 225);
+            this.txtTelephone.MaxLength = 10;
+            this.txtTelephone.Name = "txtTelephone";
+            this.txtTelephone.Size = new System.Drawing.Size(131, 22);
+            this.txtTelephone.TabIndex = 215;
+            this.txtTelephone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelephone_KeyPress_1);
             // 
             // label2
             // 
@@ -484,9 +484,9 @@
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.pictureBox7);
             this.panel3.Controls.Add(this.txtPrezzoMenu);
-            this.panel3.Controls.Add(this.btnRimuoviMenu);
-            this.panel3.Controls.Add(this.listView1);
-            this.panel3.Controls.Add(this.btnConfermaOrdine);
+            this.panel3.Controls.Add(this.btnRemoveMenu);
+            this.panel3.Controls.Add(this.listViewOrder);
+            this.panel3.Controls.Add(this.btnConfirmOrder);
             this.panel3.Location = new System.Drawing.Point(23, 374);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1102, 352);
@@ -678,33 +678,33 @@
             this.txtPrezzoMenu.TabIndex = 248;
             this.txtPrezzoMenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // btnRimuoviMenu
+            // btnRemoveMenu
             // 
-            this.btnRimuoviMenu.Location = new System.Drawing.Point(137, 273);
-            this.btnRimuoviMenu.Name = "btnRimuoviMenu";
-            this.btnRimuoviMenu.Size = new System.Drawing.Size(135, 60);
-            this.btnRimuoviMenu.TabIndex = 225;
-            this.btnRimuoviMenu.Text = "RIMUOVI MENU SELEZIONATI";
-            this.btnRimuoviMenu.UseVisualStyleBackColor = true;
-            this.btnRimuoviMenu.Click += new System.EventHandler(this.btnRimuoviMenu_Click);
+            this.btnRemoveMenu.Location = new System.Drawing.Point(137, 273);
+            this.btnRemoveMenu.Name = "btnRemoveMenu";
+            this.btnRemoveMenu.Size = new System.Drawing.Size(135, 60);
+            this.btnRemoveMenu.TabIndex = 225;
+            this.btnRemoveMenu.Text = "RIMUOVI MENU SELEZIONATI";
+            this.btnRemoveMenu.UseVisualStyleBackColor = true;
+            this.btnRemoveMenu.Click += new System.EventHandler(this.btnRemoveMenu_Click_1);
             // 
-            // listView1
+            // listViewOrder
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listViewOrder.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.chNomeMenu,
             this.chpizza,
             this.chbevanda,
             this.chprezzo});
-            this.listView1.FullRowSelect = true;
-            this.listView1.GridLines = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(37, 25);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(555, 231);
-            this.listView1.TabIndex = 224;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            this.listView1.DoubleClick += new System.EventHandler(this.listView1_DoubleClick);
+            this.listViewOrder.FullRowSelect = true;
+            this.listViewOrder.GridLines = true;
+            this.listViewOrder.HideSelection = false;
+            this.listViewOrder.Location = new System.Drawing.Point(37, 25);
+            this.listViewOrder.Name = "listViewOrder";
+            this.listViewOrder.Size = new System.Drawing.Size(555, 231);
+            this.listViewOrder.TabIndex = 224;
+            this.listViewOrder.UseCompatibleStateImageBehavior = false;
+            this.listViewOrder.View = System.Windows.Forms.View.Details;
+            this.listViewOrder.DoubleClick += new System.EventHandler(this.listViewOrder_DoubleClick);
             // 
             // chNomeMenu
             // 
@@ -727,15 +727,15 @@
             this.chprezzo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.chprezzo.Width = 45;
             // 
-            // btnConfermaOrdine
+            // btnConfirmOrder
             // 
-            this.btnConfermaOrdine.Location = new System.Drawing.Point(812, 268);
-            this.btnConfermaOrdine.Name = "btnConfermaOrdine";
-            this.btnConfermaOrdine.Size = new System.Drawing.Size(160, 70);
-            this.btnConfermaOrdine.TabIndex = 215;
-            this.btnConfermaOrdine.Text = "CONFERMA ORDINE";
-            this.btnConfermaOrdine.UseVisualStyleBackColor = true;
-            this.btnConfermaOrdine.Click += new System.EventHandler(this.btnConfermaOrdine_Click);
+            this.btnConfirmOrder.Location = new System.Drawing.Point(812, 268);
+            this.btnConfirmOrder.Name = "btnConfirmOrder";
+            this.btnConfirmOrder.Size = new System.Drawing.Size(160, 70);
+            this.btnConfirmOrder.TabIndex = 215;
+            this.btnConfirmOrder.Text = "CONFERMA ORDINE";
+            this.btnConfirmOrder.UseVisualStyleBackColor = true;
+            this.btnConfirmOrder.Click += new System.EventHandler(this.btnConfirmOrder_Click_1);
             // 
             // PizzeriaView
             // 
@@ -793,15 +793,15 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.TextBox txtPrezzoBevanda;
         private System.Windows.Forms.TextBox txtPrezzoPizza;
-        private System.Windows.Forms.ComboBox cmbBevanda;
+        private System.Windows.Forms.ComboBox cmbDrink;
         private System.Windows.Forms.ComboBox cmbPizza;
-        private System.Windows.Forms.Button btnAggiungiMenu;
+        private System.Windows.Forms.Button btnAddMenu;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnConfermaDatiCliente;
-        private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.Button btnConfirmDataClient;
+        private System.Windows.Forms.TextBox txtTelephone;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox txtcitta;
@@ -814,9 +814,9 @@
         private System.Windows.Forms.TextBox txtnome;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button btnConfermaOrdine;
-        private System.Windows.Forms.Button btnRimuoviMenu;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Button btnConfirmOrder;
+        private System.Windows.Forms.Button btnRemoveMenu;
+        private System.Windows.Forms.ListView listViewOrder;
         private System.Windows.Forms.ColumnHeader chNomeMenu;
         private System.Windows.Forms.ColumnHeader chpizza;
         private System.Windows.Forms.ColumnHeader chbevanda;
