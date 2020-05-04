@@ -131,7 +131,7 @@ namespace WinFormMVC.View
             txtPrezzoPizze.Text = totalPrice.GetTotalPizze().ToString();
             txtPrezzoMenu.Text = totalPrice.GetTotalMenu().ToString();
 
-            txtPrezzoMedioBevande.Text = averagePrice.ResultBevanda().ToString();
+            txtPrezzoMedioBevande.Text = averagePrice.ResultDrink().ToString();
             txtPrezzoMedioPizze.Text = averagePrice.ResultPizza().ToString();
             txtPrezzoMedioMenu.Text = averagePrice.ResultMenu().ToString();
 

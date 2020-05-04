@@ -8,40 +8,40 @@ namespace MVCView
 {
     public class ControllDataClient
     {
-        private TextBox name;
-        private TextBox surname;
-        private TextBox address;
-        private TextBox city;
-        private TextBox telefon;
+        private TextBox cmbName;
+        private TextBox cmbSurname;
+        private TextBox cmbAddress;
+        private TextBox cmbCity;
+        private TextBox cmbTelefon;
 
         public ControllDataClient(TextBox nome, TextBox cogn, TextBox ind, TextBox cit, TextBox tel)
         {
-            this.name = nome;
-            this.surname = cogn;
-            this.address = ind;
-            this.city = cit;
-            this.telefon = tel;
+            this.cmbName = nome;
+            this.cmbSurname = cogn;
+            this.cmbAddress = ind;
+            this.cmbCity = cit;
+            this.cmbTelefon = tel;
         }
 
         public void ResetTextBox()
         {
-            name.Text = "";
-            surname.Text = "";
-            address.Text = "";
-            city.Text = "";
-            telefon.Text = "";
+            cmbName.Text = "";
+            cmbSurname.Text = "";
+            cmbAddress.Text = "";
+            cmbCity.Text = "";
+            cmbTelefon.Text = "";
         }
         public bool ControllTextBox()
         {
-            return !string.IsNullOrEmpty(name.Text)
-                && !string.IsNullOrEmpty(surname.Text)
-                && !string.IsNullOrEmpty(address.Text)
-                && !string.IsNullOrEmpty(city.Text)
-                && !string.IsNullOrEmpty(telefon.Text);
+            return !string.IsNullOrEmpty(cmbName.Text)
+                && !string.IsNullOrEmpty(cmbSurname.Text)
+                && !string.IsNullOrEmpty(cmbAddress.Text)
+                && !string.IsNullOrEmpty(cmbCity.Text)
+                && !string.IsNullOrEmpty(cmbTelefon.Text);
         }
         public bool ControllTelefon()
         {
-            if (telefon.Text.Length < 10)
+            if (cmbTelefon.Text.Length < 10)
             {
                 return false;
             }

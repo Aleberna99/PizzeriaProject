@@ -16,7 +16,7 @@ namespace MVCController
         {
             return totalPizze.Count > 0 ? totalPizze.Average() : 0;
         }
-        public double ResultBevanda()
+        public double ResultDrink()
         {
             return totalDrink.Count > 0 ? totalDrink.Average() : 0;
         }
