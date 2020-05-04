@@ -10,6 +10,12 @@ namespace MVCModal
         void Visit(Pizza pizza);
         void Visit(Drink drink);
         void Visit(Menu menu);
+
+        object GetTotalDrink();
+        object GetTotalMenu();
+        object GetTotalPizze();
+
+
         void Reset();
     }
 }

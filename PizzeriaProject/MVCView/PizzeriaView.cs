@@ -125,15 +125,15 @@ namespace WinFormMVC.View
             listView1.Items.Add(item);
         }
 
-        public void PrintCalculations(TotalPrice totalPrice, AveragePrice averagePrice, TotalQuantity totalQuantity)
+        public void PrintCalculations(IVisitor totalPrice, IVisitor averagePrice, IVisitor totalQuantity)
         {
             txtPrezzoBevande.Text = totalPrice.GetTotalDrink().ToString();
             txtPrezzoPizze.Text = totalPrice.GetTotalPizze().ToString();
             txtPrezzoMenu.Text = totalPrice.GetTotalMenu().ToString();
 
-            txtPrezzoMedioBevande.Text = averagePrice.ResultDrink().ToString();
-            txtPrezzoMedioPizze.Text = averagePrice.ResultPizza().ToString();
-            txtPrezzoMedioMenu.Text = averagePrice.ResultMenu().ToString();
+            txtPrezzoMedioBevande.Text = averagePrice.GetTotalDrink().ToString();
+            txtPrezzoMedioPizze.Text = averagePrice.GetTotalPizze().ToString();
+            txtPrezzoMedioMenu.Text = averagePrice.GetTotalMenu().ToString();
 
             txtQuantitaMenu.Text = totalQuantity.GetTotalMenu().ToString();
         }

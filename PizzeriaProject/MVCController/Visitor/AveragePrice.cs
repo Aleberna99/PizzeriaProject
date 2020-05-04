@@ -12,15 +12,15 @@ namespace MVCController
         private List<double> totalDrink = new List<double>();
         private List<double> totalMenu = new List<double>();
 
-        public double ResultPizza()
+        public object GetTotalPizze()
         {
             return totalPizze.Count > 0 ? totalPizze.Average() : 0;
         }
-        public double ResultDrink()
+        public object GetTotalDrink()
         {
             return totalDrink.Count > 0 ? totalDrink.Average() : 0;
         }
-        public double ResultMenu()
+        public object  GetTotalMenu()
         {
             return totalMenu.Count > 0 ? totalMenu.Average() : 0;
         }

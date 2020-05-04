@@ -32,17 +32,17 @@ namespace MVCController
             totalMenu = 0;
         }
 
-        public double GetTotalPizze()
+        public object GetTotalPizze()
         {
             return totalPizze;
         }
 
-        public double GetTotalDrink()
+        public object GetTotalDrink()
         {
             return totalDrink;
         }
 
-        public double GetTotalMenu()
+        public object GetTotalMenu()
         {
             return totalMenu;
         }

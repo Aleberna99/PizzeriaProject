@@ -8,7 +8,7 @@ namespace WinFormMVC.Controller
     {
         void SetController(PizzeriaController controller);
         void AddInListView(IOrder menu, Drink drink, Pizza pizza);
-        void PrintCalculations(TotalPrice totalPrice, AveragePrice averagePrice, TotalQuantity totalQuantity);
+        void PrintCalculations(IVisitor totalPrice, IVisitor averagePrice, IVisitor totalQuantity);
         void RemoveOnListView();
         void PrintMenu(IOrder menu);
         bool PrintReceipt(IOrder ordine, Client cliente);

@@ -15,9 +15,9 @@ namespace WinFormMVC.Controller
 
         private int numOrder;
 
-        TotalPrice totalPrice;
-        AveragePrice averagePrice;
-        TotalQuantity totalQuantity;
+        IVisitor totalPrice;
+        IVisitor averagePrice;
+        IVisitor totalQuantity;
 
         IPizzeriaView view;
         private IDatabase db;
