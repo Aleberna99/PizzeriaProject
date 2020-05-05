@@ -27,4 +27,4 @@ Le statistiche di interesse sono :<br>
 Ogni pizza ha un nome, un prezzo e una lista di ingredienti con cui è realizzata, invece la bevanda ha un nome e un prezzo.<br>
 Il nome e gli ingredienti saranno in formato testuale breve, il prezzo sarà espresso in euro.<br>
 Ogni menu contiene una pizza e una bibita che è possibile scegliere tra diverse varietà e il cliente può aggiungere, senza limitazioni, menu al suo ordine.<br>
-Il programma deve poter salvare l’ordine in un file Json. Eventuali release future potranno prevedere l’interfacciamento con un database.<br>
+Il programma deve poter salvare l’ordine in un file di testo in formato Json. Eventuali release future potranno prevedere l’interfacciamento con un database.<br>
