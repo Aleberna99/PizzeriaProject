@@ -25,7 +25,7 @@ Le statistiche di interesse sono :<br>
 3 -	Il prezzo medio dei menu, delle pizze e delle bevande ordinate.<br><br>
 
 Ogni pizza avrà un nome, che identifica il tipo di pizza ordinata (es. margherita, rosmarino…), una lista di ingredienti con cui è realizzata e un prezzo, invece ogni bevanda avrà un nome, che identifica il tipo di bevanda ordinata (es. acqua, coca cola…) e un prezzo. <br>
-Il nome e gli ingredienti saranno in formato testuale breve, il prezzo sarà espresso in euro.<br>
+Il nome e gli ingredienti saranno in formato testuale breve, il prezzo sarà espresso in euro.<br><br>
 
 I dati del cliente richiesti sono:<br>
 
