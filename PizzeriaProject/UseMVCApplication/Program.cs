@@ -20,7 +20,7 @@ namespace UseMVCApplication
             PizzeriaView view = new PizzeriaView();
             view.Visible = false;
 
-            PizzeriaController controller = new PizzeriaController(view, @"C:\Users\Roberto\Desktop\PMO\PizzeriaProject\PizzeriaProject\db2.txt");
+            PizzeriaController controller = new PizzeriaController(view, @"C:\Users\Roberto\Desktop\PMO\PizzeriaProject\PizzeriaProject\File json\db2.txt");
 
             view.ShowDialog();
         }

@@ -154,7 +154,7 @@ namespace WinFormMVC.View
         {
             bool confirm = false;
 
-            if (MessageBox.Show(order.ReturnName() + "\n\n" + order.show() + client.Show(), "CONFERMARE L'ORDINE ? ", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show(order.ReturnName() + "\n\n" + order.show() + client.Show() + "\n\n\nPrezzo totale : " + txtPrezzoMenu.Text + " euro", "CONFERMARE L'ORDINE ? ", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 if (MessageBox.Show("GRAZIE PER AVER ACQUISTATO DA ALE PIZZA. \nIL SUO ORDINE VERRA' CONSEGNATO AL PIU' PRESTO", "ACQIUSTO CONFERMATO", MessageBoxButtons.OK) == DialogResult.OK)
                 {
